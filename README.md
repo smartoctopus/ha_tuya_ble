@@ -1,6 +1,14 @@
-# Home Assistant support for Tuya BLE devices
+# ARCHIVED: NEVER WORKED & WILL NEVER TRY TO FIX IT
 
-## Overview
+This fork started with a merge of markusg1234's fork. Then, I authored two commits to try to implement support for `vlzqwckk` and `iv7hudlj` (two bluetooth/humidity sensors I bought from Aliexpress), but they didn't work at all.
+
+If someone needs a way to make those two sensors work with Home Assistant, I'm currently using this customized firmware.
+
+The original README is left below:
+
+## Home Assistant support for Tuya BLE devices
+
+### Overview
 
 This integration supports Tuya devices connected via BLE.
 
@@ -11,19 +19,19 @@ _Original HASS component forked from https://github.com/PlusPlus-ua/ha_tuya_ble_
 _This forks base is from https://github.com/markusg1234/ha_tuya_ble_
 
 
-## Installation
+### Installation
 
 Place the `custom_components` folder in your configuration directory (or add its contents to an existing `custom_components` folder). Alternatively install via [HACS](https://hacs.xyz/).
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=patriot1889&repository=ha_tuya_ble&category=integration)
 
-## Usage
+### Usage
 
 After adding to Home Assistant integration should discover all supported Bluetooth devices, or you can add discoverable devices manually.
 
 The integration works locally, but connection to Tuya BLE device requires device ID and encryption key from Tuya IOT cloud. It could be obtained using the same credentials as in the previous official Tuya integration. To obtain the credentials, please refer to official Tuya integration [documentation](https://web.archive.org/web/20240204064157/https://www.home-assistant.io/integrations/tuya/) [[1]](https://github.com/home-assistant/home-assistant.io/blob/a4e6d4819f1db584cc66ba2082508d3978f83f7e/source/_integrations/tuya.markdown)
 
-## Supported devices list (not up to date)
+### Supported devices list (not up to date)
 
 * Fingerbots (category_id 'szjqr')
   + Fingerbot (product_ids 'ltak7e1p', 'y6kttvd6', 'yrnk7mnn', 'nvr2rocq', 'bnt7wajf', 'rvdceqjh', '5xhbk964'), original device, first in category, powered by CR2 battery.
@@ -59,7 +67,7 @@ The integration works locally, but connection to Tuya BLE device requires device
 
 
 
-## Support project
+### Support project
 _The following is a comment from the original developer which deserves to stay_
 
 
